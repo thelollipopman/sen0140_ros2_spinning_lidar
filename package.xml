@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>ROS 2 driver for the SEN0140 ADXL345 and ITG-3200 </description>
   <maintainer email="leechengyongcephas@gmail.com">root</maintainer>
-  <license>MIT/<license>
+  <license>MIT/</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
