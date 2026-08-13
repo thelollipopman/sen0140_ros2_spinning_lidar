@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(SEN0140_ros2_spinning_lidar)
+project(sen0140_ros2_spinning_lidar)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,18 +10,18 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-add_executable(SEN0140_node
-  src/SEN0140_node.cpp
+add_executable(sen0140_node
+  src/sen0140_node.cpp
 )
 
 ament_target_dependencies(
-  SEN0140_node
+  sen0140_node
   rclcpp
   sensor_msgs
 )
 
 install(
-  TARGETS SEN0140_node
+  TARGETS sen0140_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
